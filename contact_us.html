@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Business Flooring Inc. - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="Business, Flooring" />
@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
   </head>
 
   <body>
@@ -73,31 +73,43 @@
       <br>
     <!-- Example row of columns -->
     	<div class="span4">
-            <form action="mailto:blsmit5728+testing@gmail.com" method="post" enctype="text/plain">
+            <form name="contactform" method="post" action="mail.php">
             <fieldset>
             <legend> Contact Us </legend>
             	<div class="clearfix">
-                	<label for="xlInput">Name</label>
+                	<label for="xlInput">First Name</label>
                     <div class="input">
-                    	<input class="xlarge" id="xlInput" name="Name " size="30" type="text">
+                    	<input class="xlarge" id="xlInput" name="first_name" size="30" type="text">
+                    </div>
+                </div>
+                <div class="clearfix">
+                	<label for="xlInput">Last Name</label>
+                    <div class="input">
+                    	<input class="xlarge" id="xlInput" name="last_name" size="30" type="text">
                     </div>
                 </div>
               	<div class="clearfix">
                 	<label for="xlInput">E-mail Address</label>
                     <div class="input">
-                    	<input class="xlarge" id="xlInput" name="Email " size="30" type="text">
+                    	<input class="xlarge" id="xlInput" name="email" size="30" type="text">
+                    </div>
+                </div>
+                <div class="clearfix">
+                	<label for="xlInput">Telepphone</label>
+                    <div class="input">
+                    	<input class="xlarge" id="xlInput" name="telephone" size="30" type="text">
                     </div>
                 </div>
                 <div class="clearfix">
                 	<label for="xlInput">Description</label>
                     <div class="input">
-                    	<textarea class="xlarge" id="textarea2" name="Description " rows="5"></textarea>
+                    	<textarea class="xlarge" id="textarea2" name="comments" rows="5"></textarea>
                     </div>
                 </div>
                 
                 <div class="clearfix">
                 	<div class="input">
-                		<button type="submit" class="btn">Submit</button>
+                		<button type="submit" class="btn" value="Submit">Submit</button>
                     </div>
                 </div>
             </fieldset>
